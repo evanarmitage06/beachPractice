@@ -14,11 +14,14 @@ public class BeachCode {
             }
         
         }
-        //int lowSize = Math.random(4,);
-        String waveSize;
-        //System.out.println("Sine we are going to " + surfSpot + "what size board should we ride?\n The waves are going to be " + waveSize);        
- 
- 
+        if(surfSpot.equals("Pipeline") || surfSpot.equals("The Wedge") ){
+            int lowSize = (int)Math.random()*5+2;
+            int highSize = (int)Math.random()*4+7;
+            String waveSize = (lowSize + " to "+highSize);
+            System.out.println("Sine we are going to " + surfSpot + ", and the waves are going to be " + waveSize + "\nWhat size board should we ride?");        
+            String board = scan.nextLine();
+        }
+       
  
  
  
