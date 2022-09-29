@@ -3,6 +3,32 @@ public class BeachCode {
     public static void main(String[]args){
         Scanner scan = new Scanner(System.in);
         System.out.println("I want to surf, where should we go surfing?");
+        String[] surfList = {
+            "PipeLine",
+            "The Wedge",
+            "15th Street",
+            "11th Street",
+            "Tamarack",
+            "North Blacks",
+            "South Blacks",
+            "G-Land", 
+            "La Jolla Shores",
+            "Upper Tresles",
+            "Lower Tresles", 
+            "Jaws"
+        };      
+        int i = 0;
+        while (i<5){
+            int x = (int)Math.random()*5+0;
+
+            i++;
+        }
+
+
+
+
+
+        System.out.println("The good surf today is  ");
         String surfSpot;
         while(true) {
             surfSpot = scan.nextLine();
