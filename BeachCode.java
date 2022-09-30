@@ -16,12 +16,17 @@ public class BeachCode {
             "Upper Tresles",
             "Lower Tresles", 
             "Jaws"
-        };      
-        int i = 0;
-        while (i<5){
-            int x = (int)Math.random()*5+0;
+        };    
+        String[] chosenSpots = new String[5];  
+        for (int i = 0; i<5; i++){
 
-            i++;
+            int surfSpotNew = (int)Math.random()*surfList.length+0; 
+            chosenSpots[i]= surfList[surfSpotNew];
+            surfList[surfSpotNew] = "";
+            if(){
+                
+            }
+
         }
 
 
