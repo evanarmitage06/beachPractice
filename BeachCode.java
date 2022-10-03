@@ -18,44 +18,35 @@ public class BeachCode {
             "Jaws"
         };    
         String[] chosenSpots = new String[5];  
+        int surfSpotNew;
         for (int i = 0; i<5; i++){
 
-            int surfSpotNew = (int)Math.random()*surfList.length+0; 
+            surfSpotNew = (int)(Math.random()*surfList.length)+0; 
+            while(surfList[surfSpotNew].equals("")){
+                surfSpotNew = (int)(Math.random()*surfList.length)+0;
+            }
             chosenSpots[i]= surfList[surfSpotNew];
             surfList[surfSpotNew] = "";
-            if(){
-                
-            }
-
         }
-
-
-
-
-
-        System.out.println("The good surf today is  ");
-        String surfSpot;
-        while(true) {
-            surfSpot = scan.nextLine();
-            if (surfSpot.equals("Pipeline")||surfSpot.equals("The Wedge")){
-                System.out.println("OOOOOOOHHHHHH, " + surfSpot + " sounds so much fun ");
-                break;
-            }else{
-                System.out.println("Bruh, that spot isnt looking so hot, can you think of anything else?");
-            }
+        System.out.println("The surf today is looking good in ");
+        for(String s : chosenSpots){System.out.print(s+", ");}
+        System.out.println();
         
+        for(int i = 0;i<chosenSpots.length;i++){
+            while(true){
+                String surfSpot = scan.nextLine();
+                if(surfSpot.equals(chosenSpots[i])){
+                System.out.println("it works");
+                break;
+                }
+                else{
+                System.out.println("That spots not looking so hot today lets pick something else?");
+                
+                }
+            }
         }
-        if(surfSpot.equals("Pipeline") || surfSpot.equals("The Wedge") ){
-            int lowSize = (int)Math.random()*5+2;
-            int highSize = (int)Math.random()*4+7;
-            String waveSize = (lowSize + " to "+highSize);
-            System.out.println("Sine we are going to " + surfSpot + ", and the waves are going to be " + waveSize + "\nWhat size board should we ride?");        
-            String board = scan.nextLine();
-        }
-       
- 
- 
- 
-        scan.close();
+            
+            
+    scan.close(); 
     }
 }
