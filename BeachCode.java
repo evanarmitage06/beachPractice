@@ -4,7 +4,7 @@ public class BeachCode {
         Scanner scan = new Scanner(System.in);
         System.out.println("I want to surf, where should we go surfing?");
         String[] surfList = {
-            "PipeLine",
+            "Pipeline",
             "The Wedge",
             "15th Street",
             "11th Street",
@@ -32,21 +32,29 @@ public class BeachCode {
         for(String s : chosenSpots){System.out.print(s+", ");}
         System.out.println();
         
-        for(int i = 0;i<chosenSpots.length;i++){
-            while(true){
-                String surfSpot = scan.nextLine();
-                if(surfSpot.equals(chosenSpots[i])){
-                System.out.println("it works");
+        while(true){
+            String surfSpot = scan.nextLine();
+            if(surfSpot.equals(chosenSpots[0])){
                 break;
-                }
-                else{
-                System.out.println("That spots not looking so hot today lets pick something else?");
-                
-                }
             }
-        }
-            
-            
+            else if(surfSpot.equals(chosenSpots[1])){
+                    break;
+            }
+            else if(surfSpot.equals(chosenSpots[2])){
+                    break;
+            }
+            else if(surfSpot.equals(chosenSpots[3])){
+                    break;
+            }
+            else if(surfSpot.equals(chosenSpots[4])){
+                    break;
+            }
+            else{
+                System.out.println("That spots not looking so hot today lets pick something else?");
+            }    
+        }   
+        System.out.println(surfSpot + " seems like fun ");
     scan.close(); 
+        
     }
 }

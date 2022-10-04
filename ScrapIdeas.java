@@ -18,7 +18,15 @@ public class ScrapIdeas {
             System.out.println("Sine we are going to " + surfSpot + ", and the waves are going to be " + waveSize + "\nWhat size board should we ride?");        
             String board = scan.nextLine();
         }
-
+        for(int i = 0;i<5;i++){
+            String surfSpot = scan.nextLine();
+            if(surfSpot.equals(chosenSpots[i])){
+                System.out.println("it works");
+                }
+            else{
+                System.out.println("Not works");
+                }
+            }
 
         */
         }
