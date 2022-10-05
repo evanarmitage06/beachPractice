@@ -27,6 +27,26 @@ public class ScrapIdeas {
                 System.out.println("Not works");
                 }
             }
+            while(true){
+            String surfSpot = scan.nextLine();
+            if(surfSpot.equals(chosenSpots[0])){
+                break;
+            }
+            else if(surfSpot.equals(chosenSpots[1])){
+                    break;
+            }
+            else if(surfSpot.equals(chosenSpots[2])){
+                    break;
+            }
+            else if(surfSpot.equals(chosenSpots[3])){
+                    break;
+            }
+            else if(surfSpot.equals(chosenSpots[4])){
+                    break;
+            }
+            else{
+                System.out.println("That spots not looking so hot today lets pick something else?");
+            }    
 
         */
         }

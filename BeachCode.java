@@ -31,28 +31,16 @@ public class BeachCode {
         System.out.println("The surf today is looking good in ");
         for(String s : chosenSpots){System.out.print(s+", ");}
         System.out.println();
-        
-        while(true){
-            String surfSpot = scan.nextLine();
-            if(surfSpot.equals(chosenSpots[0])){
-                break;
+        boolean flag = false;
+        String surfSpot = "";
+        while(flag==false){
+            surfSpot = scan.nextLine(); 
+            for(int i = 0;i<5;i++){
+                if(surfSpot.equals(chosenSpots[i])){
+                flag = true;
+                }
             }
-            else if(surfSpot.equals(chosenSpots[1])){
-                    break;
-            }
-            else if(surfSpot.equals(chosenSpots[2])){
-                    break;
-            }
-            else if(surfSpot.equals(chosenSpots[3])){
-                    break;
-            }
-            else if(surfSpot.equals(chosenSpots[4])){
-                    break;
-            }
-            else{
-                System.out.println("That spots not looking so hot today lets pick something else?");
-            }    
-        }   
+        }
         System.out.println(surfSpot + " seems like fun ");
     scan.close(); 
         
