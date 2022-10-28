@@ -44,7 +44,13 @@ public class BeachCode {
         }
         System.out.println("-----------------------------------");
         System.out.println(surfSpot + " seems like fun, the waves there are barreling like crazy!!");
-        System.out.println("With the batlefield "+ surfSpot + "chosen, you now need your weapon of choice.\n");
+        System.out.println("With the batlefield "+ surfSpot + " chosen, you now need your weapon of choice.\n");
+
+
+
+
+
+        
         scan.close(); 
         
     }
